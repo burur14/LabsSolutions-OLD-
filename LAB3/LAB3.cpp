@@ -7,7 +7,7 @@ int main(){
 
 	double a1 = 1;
 	double a2 = (a1 + (x / a1)) / 2;
-	double tmp;
+
 	while (abs(a2 - a1) > 0.0001) {
 		
 		a1 = a2;
