@@ -5,7 +5,14 @@ int main() {
 	std::cin >> n;
 	int k1 = 1;
 	int k2 = 1;
+	int count = 2;
 
-	std::cout << k1 << "  " << k2 << std::endl;
+	while (count != n) {
+		count++;
+		k1 = k2;
+		k2 = (k1 * (4 * count - 6)) / count;
+	}
 
+	std::cout << k2 << std::endl;
+	return 0;
 }
